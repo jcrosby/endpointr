@@ -1,0 +1,10 @@
+Endpointr
+
+To build and run:
+
+1) Open the Xcode project file.
+2) Switch to Release Mode if needed.
+3) Click Build and Run.
+
+Optional:
+* Copy the file from the release folder in the build directory to your Applications folder.
