@@ -1,4 +1,7 @@
 Endpointr
+---------
+
+A Leopard UI for testing OAuth endpoints.
 
 To build and run:
 
@@ -8,3 +11,6 @@ To build and run:
 
 Optional:
 * Copy the file from the release folder in the build directory to your Applications folder.
+
+The default field values are based on CloudKit and its "notes" demo. Adjust as
+needed for your own APIs.

@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.02">
 	<data>
 		<int key="IBDocument.SystemTarget">1050</int>
-		<string key="IBDocument.SystemVersion">9C7010</string>
-		<string key="IBDocument.InterfaceBuilderVersion">649</string>
-		<string key="IBDocument.AppKitVersion">949.26</string>
+		<string key="IBDocument.SystemVersion">9F33</string>
+		<string key="IBDocument.InterfaceBuilderVersion">672</string>
+		<string key="IBDocument.AppKitVersion">949.34</string>
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -272,6 +272,7 @@
 				<string key="NSWindowTitle">Endpointr</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
+				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="439893737">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -370,7 +371,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="461907323">
 								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">http://localhost:3000/oauth/request_token</string>
+								<string key="NSContents">http://localhost:3000/oauth/request_tokens</string>
 								<reference key="NSSupport" ref="1006841192"/>
 								<reference key="NSControlView" ref="75444680"/>
 								<bool key="NSDrawsBackground">YES</bool>
@@ -400,7 +401,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="598338487">
 								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">http://localhost:3000/oauth/authorize</string>
+								<string key="NSContents">http://localhost:3000/oauth/authorization</string>
 								<reference key="NSSupport" ref="1006841192"/>
 								<reference key="NSControlView" ref="573479070"/>
 								<bool key="NSDrawsBackground">YES</bool>
@@ -417,7 +418,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="932894781">
 								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">http://localhost:3000/oauth/access_token</string>
+								<string key="NSContents">http://localhost:3000/oauth/access_tokens</string>
 								<reference key="NSSupport" ref="1006841192"/>
 								<reference key="NSControlView" ref="545019433"/>
 								<bool key="NSDrawsBackground">YES</bool>
@@ -434,7 +435,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="666514528">
 								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">http://localhost:3000/oauth/echo?word=hello</string>
+								<string key="NSContents">http://localhost:3000/notes</string>
 								<reference key="NSSupport" ref="1006841192"/>
 								<reference key="NSControlView" ref="876762334"/>
 								<bool key="NSDrawsBackground">YES</bool>
@@ -467,7 +468,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="909243603">
 								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">key</string>
+								<string key="NSContents">cloudkitconsumer</string>
 								<reference key="NSSupport" ref="1006841192"/>
 								<reference key="NSControlView" ref="578421530"/>
 								<bool key="NSDrawsBackground">YES</bool>
@@ -500,7 +501,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="89427006">
 								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">secret</string>
+								<string key="NSContents"/>
 								<reference key="NSSupport" ref="1006841192"/>
 								<reference key="NSControlView" ref="151169214"/>
 								<bool key="NSDrawsBackground">YES</bool>
@@ -1497,9 +1498,9 @@
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
-								<object class="NSMenuItem" key="NSMenuItem" id="124779874">
+								<object class="NSMenuItem" key="NSMenuItem" id="745234790">
 									<reference key="NSMenu" ref="601947706"/>
-									<string key="NSTitle">GET</string>
+									<string key="NSTitle">POST</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1514,10 +1515,9 @@
 									<string key="NSTitle">OtherViews</string>
 									<object class="NSMutableArray" key="NSMenuItems">
 										<bool key="EncodedWithXMLCoder">YES</bool>
-										<reference ref="124779874"/>
-										<object class="NSMenuItem" id="745234790">
+										<object class="NSMenuItem" id="124779874">
 											<reference key="NSMenu" ref="601947706"/>
-											<string key="NSTitle">POST</string>
+											<string key="NSTitle">GET</string>
 											<string key="NSKeyEquiv"/>
 											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
@@ -1526,6 +1526,7 @@
 											<string key="NSAction">_popUpItemAction:</string>
 											<reference key="NSTarget" ref="604561961"/>
 										</object>
+										<reference ref="745234790"/>
 										<object class="NSMenuItem" id="379963032">
 											<reference key="NSMenu" ref="601947706"/>
 											<string key="NSTitle">PUT</string>
@@ -1539,6 +1540,7 @@
 										</object>
 									</object>
 								</object>
+								<int key="NSSelectedIndex">1</int>
 								<int key="NSPreferredEdge">1</int>
 								<bool key="NSUsesItemFromMenu">YES</bool>
 								<bool key="NSAltersState">YES</bool>
@@ -3155,6 +3157,7 @@
 					<string>525.IBPluginDependency</string>
 					<string>526.IBPluginDependency</string>
 					<string>527.IBPluginDependency</string>
+					<string>528.IBEditorWindowLastContentRect</string>
 					<string>528.IBPluginDependency</string>
 					<string>528.editorWindowContentRectSynchronizationRect</string>
 					<string>529.IBPluginDependency</string>
@@ -3334,6 +3337,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>{{468, 613}, {104, 63}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{247, 309}, {113, 63}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
